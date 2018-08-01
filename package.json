@@ -1,0 +1,22 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "A collection of script files for simple utility functionalities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaddyshad/utility.git"
+  },
+  "author": "shaddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaddyshad/utility/issues"
+  },
+  "homepage": "https://github.com/shaddyshad/utility#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0"
+  }
+}
