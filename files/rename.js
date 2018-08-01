@@ -1,11 +1,13 @@
 var fs = require('fs');
-var fs = require('path');
+var path = require('path');
+
+require('dotenv').config();
 
 
 //rename all files in the dir, with the pattern pattern with the
 function rename_all_file_extension(dir, extension, replacement){
   var _dir = path.resolve(path.normalize(dir));
-  var _ext = new RegExp(/.extension/);
+  var _ext = new RegExp(/.extension$/);
   fs.readdir(_dir, function(err, _files){
     if(err) throw err;
     var files = [];
@@ -30,3 +32,5 @@ function rename_all_file_extension(dir, extension, replacement){
 
   return true;
 }
+
+module.exports = rename_all_file_extension;
